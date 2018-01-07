@@ -1,0 +1,26 @@
+#approach {
+  background: url(../img/approach-bg.jpg) no-repeat scroll 0 0;
+  background-size: cover;
+  padding-top: 90px;
+}
+
+.approch-text .color-text {
+  font-weight: 600;
+}
+
+@media screen and (max-width:991px) {
+  #approach {
+    padding-bottom: 120px;
+  }
+
+  .approach-thumb {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  #approach {
+    padding-top: 70;
+    padding-bottom: 70px;
+  }
+}

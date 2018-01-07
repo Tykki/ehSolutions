@@ -1,0 +1,76 @@
+.team-top-title .section-title {
+  color: #fff;
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+.team-top-title {
+  background: #333;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.team-single {
+  position: relative;
+}
+
+.team-img img {
+  width: 100%;
+}
+
+.team-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  top: 0;
+  left: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  @include bg-opacity($basecolor, .80);
+    justify-content: center;
+  color: #fff;
+  opacity: 0;
+  transition: .5s;
+}
+
+.team-overlay > h4 {
+  font-size: 24px;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.team-social>a {
+  width: 30px;
+  height: 30px;
+  background: $basecolor;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.team-social>a:hover {
+  color: $basecolor;
+  background: #fff;
+}
+
+.team-single:hover .team-overlay {
+  opacity: 1;
+}
+
+@media screen and (max-width:767px) {
+  .team-single {
+    margin-bottom: 30px;
+  }
+}
+
+
+
+
+
+
+
+
+

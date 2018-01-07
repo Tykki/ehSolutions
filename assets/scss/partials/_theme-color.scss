@@ -1,0 +1,110 @@
+
+
+/**\
+Theme color. please replace with your own color variable. 
+\**/
+
+a:hover, a:focus, a:active {
+  color: $basecolor;
+}
+.color-text {
+  color: $basecolor; 
+}
+.bg-theme {
+  background: $basecolor;
+}
+.btn.btn-theme {
+  background: $basecolor;
+}
+.loader-icon {
+  border-right: 3px solid $basecolor !important;
+}
+.scroll-top {
+  background: $basecolor;
+}
+.nav.navbar-nav > li > a.btn-call-to-action {
+  background: $basecolor;
+}
+.nav.navbar-nav > li > a:hover,
+.nav.navbar-nav > li > a:active,
+.nav.navbar-nav > li > a:focus {
+    color: $basecolor;
+}
+.nav.navbar-nav > li > a.btn-call-to-action:hover,
+.nav.navbar-nav > li > a.btn-call-to-action:active,
+.nav.navbar-nav > li > a.btn-call-to-action:focus {
+    background: $basecolor;
+}
+.navbar-toggle {
+    background: $basecolor;
+}
+.feature-slider .owl-nav > div:hover {
+  background: $basecolor;
+}
+#fun-facts:after {
+  @include bg-opacity($basecolor, .90);
+}
+.owl-dot.active {
+  background: $basecolor;
+}
+
+.pricing-plan:hover .plan-value > h4,
+.pricing-plan.recommanded .plan-value > h4 {
+  color: $basecolor;
+}
+
+.pricing-plan:hover .plan-head,
+.pricing-plan.recommanded .plan-head {
+  color: $basecolor;
+}
+
+.pricing-plan:hover .btn.btn-theme,
+.pricing-plan.recommanded .btn.btn-theme {
+  background: $basecolor;
+}
+
+.team-overlay {
+  @include bg-opacity($basecolor, .80);
+}
+
+.team-social>a {
+  background: $basecolor;
+}
+
+.team-social>a:hover {
+  color: $basecolor;
+}
+.success-message {
+  color: $basecolor;
+}
+.footer-bottom i.fa {
+  color: $basecolor;
+}
+
+.switcher-trigger {
+  color: $basecolor;
+}
+.color-switcher i.fa.fa-smile-o {
+  color: $basecolor;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

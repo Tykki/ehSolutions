@@ -1,0 +1,80 @@
+#contact {
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+
+#contact .block-title {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.social > .list-inline > li > a > i {
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  transform: .5s;
+}
+
+.social > .list-inline > li > a > i.fa-facebook {
+  background: #365493;
+}
+
+.social > .list-inline > li > a > i.fa-twitter {
+  background: #33ccff;
+}
+.social > .list-inline > li > a > i.fa-google-plus {
+  background: #d44132;
+}
+
+.social > .list-inline > li > a > i.fa-pinterest-p {
+  background: #cb2027;
+}
+
+.social > .list-inline > li > a > i:hover {
+  transform: scale(1.05);
+}
+
+#contact .form-control {
+  border: 1px solid #eeeeee;
+  box-shadow: none;
+  padding: 13px;
+  height: 44px;
+  font-size: 13px;
+}
+.success-message {
+  position: absolute;
+  top: -50px;
+  color: $basecolor;
+  width: 100%;
+  height: 30px;
+  z-index: 1;
+  font-weight: bold;
+  opacity: 0;
+  transition: .5s;
+  left: 0;
+}
+
+#contact .has-error .form-control {
+  border-color: red !important;
+}
+#contact textarea.form-control {
+  height: auto;
+}
+
+@media screen and (max-width:767px) {
+  #contact {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+ .contact-form {
+    margin-top: 50px;
+} 
+  
+  
+}

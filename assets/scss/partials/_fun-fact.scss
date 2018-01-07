@@ -1,0 +1,48 @@
+#fun-facts {
+  background: url(../img/fun-fact-bg.jpg) no-repeat fixed;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative;
+  color: #fff;
+  z-index: 1;
+}
+
+#fun-facts:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  @include bg-opacity($basecolor, .90);
+  z-index: -1;
+}
+
+.fun-fact-block > h2 {
+  color: #fff;
+}
+
+.fact-icon {
+  font-size: 18px;
+}
+
+@media screen and (max-width:991px) {
+  .fun-fact-block {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  #fun-facts {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+
+
+
+
+

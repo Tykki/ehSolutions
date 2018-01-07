@@ -1,0 +1,355 @@
+/************\
+
+  Theme Name: Beborn
+   Theme URI: http://echotheme.com/arwen
+      Author: Echo Theme
+  Author URI: http://echotheme.com
+     Version: 1.0.0
+        Tags: Beborn
+ Text Domain: Beborn
+ Description: Our Beborn theme is clean designed for clarity. Beborn simple, 
+              straightforward typography is readable on a  wide variety of screen sizes,
+              and suitable for multiple languages. We designed it using a mobile-first approach,
+              meaning your content takes center-stage, regardless of whether your visitors arrive
+              by smartphone, tablet, laptop, or desktop computer.
+
+\************/
+
+
+/**
+   ***** TABLE OF CONTENTS
+
+01.global
+02.Global...............Globally-available variables and config.
+03.intro
+04.nav
+05.form
+06.steps
+07.approach
+08.features
+09.fun-fact
+10.coverage
+11.testimonial
+12.main-benefits
+13.faq
+14.pricing
+15.contact
+16.footer
+ */
+
+
+/*------------------------------------*\
+#VARIABLE AND MIXINS
+\*------------------------------------*/
+
+
+$basecolor:#915edf;  
+$body-font-color:#666;
+$pff:'Poppins', sans-serif;
+
+
+@mixin bg-opacity($basecolor, $opacity:.8) {
+  background: $basecolor;
+    background: rgba($basecolor, $opacity);
+}
+
+body {
+  font-family: $pff;
+  font-size: 14px;
+  line-height: 30px;
+  color: $body-font-color;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  font-size: inherit;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: $basecolor;
+  outline: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 600;
+  color: #000;
+}
+
+h1,h2 {
+  font-size: 48px;
+}
+.text-white {
+  h1,h2,h3,h4,h5,h6 {
+    color: #fff;
+  }
+}
+.no-padding {
+  padding: 0;
+}
+
+.no-padding-right {
+  padding-right: 0;
+}
+
+.no-padding-left {
+  padding-left: 0;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-35 {
+  margin-top: 35px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-45 {
+  margin-top: 45px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mt-20 {
+  margin-bottom: 20px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-35 {
+  margin-bottom: 35px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-45 {
+  margin-bottom: 45px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 900;
+  color: #000000;
+}
+
+.section-tagline {
+  margin-bottom: 30px;
+}
+
+.color-text {
+  color: $basecolor;
+}
+.text-dark {
+  color: #000;
+}
+.bg-yellow {
+  background: #ffb81e;
+}
+
+.bg-theme {
+  background: $basecolor;
+}
+
+.bg-light-green {
+  background: #76de51;
+}
+
+.bg-light-red {
+  background: #f75e61;
+}
+
+.block-title {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 25px;
+}
+
+.btn.btn-theme {
+  background: $basecolor;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+  min-width: 170px;
+  height:50px;
+  padding: 15px;
+  color: #fff;
+  line-height: normal;
+  cursor: pointer;
+}
+.btn-rounded {
+  border-radius: 100px;
+}
+.dark-overlay {
+  position: relative;
+  z-index: 10;
+    &:after {
+    content: '';
+    background: rgba(0,0,0,.70);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  } 
+}
+
+.fullscreen {
+  min-height: 100vh;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+}
+#page-loader {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+.loader-icon {
+  background: none repeat scroll 0 0 #fff;
+  border-bottom: 3px solid rgba(19, 19, 19, 0.1) !important;
+  border-left: 3px solid rgba(19, 19, 19, 0.1) !important;
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -o-border-radius: 100px;
+  -ms-border-radius: 100px;
+  border-right: 3px solid $basecolor !important;
+  border-top: 3px solid rgba(19, 19, 19, 0.1) !important;
+  height: 50px;
+  left: 50%;
+  margin: -20px 0 0 -20px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 50px;
+}
+
+.colored-border {
+  border-color: #fff;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 1s infinite linear;
+  animation: fa-spin 1s infinite linear;
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@media screen and (max-width:767px) {
+  .section-title {
+    font-size: 30px;
+  }
+}
+
+.scroll-top {
+  background: $basecolor;
+  bottom: 20px;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  position: fixed;
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+  cursor: pointer;
+  transition: .3s;
+  border-radius: 50%;
+  line-height: 40px;
+  right: -100px;
+}
+.scroll-top.active {
+  right: 20px;
+}
+
